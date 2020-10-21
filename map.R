@@ -13,3 +13,13 @@ map
 
 file='youbike.csv'
 
+ubike=read.csv(
+  file,
+  header = T,
+  sep = ",",
+  skip = 0,
+  #quote = "*",
+  stringsAsFactors = F,
+  fileEncoding = "BIG5"
+)
+ubike
