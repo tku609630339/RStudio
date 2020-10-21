@@ -8,3 +8,8 @@ map <- addTiles(map)
 map <- addMarkers(map, lat = 25.1753, lng = 121.4335) # 淡水紅毛城
 map <- addMarkers(map, lat = 25.1746388, lng = 121.452058)
 map
+
+#----分隔線-------
+
+file='youbike.csv'
+
