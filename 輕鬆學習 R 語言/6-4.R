@@ -1,4 +1,5 @@
-team_name <- c("Chicago Bulls", "Golden State Warriors") > wins <- c(72, 73)
+team_name <- c("Chicago Bulls", "Golden State Warriors") 
+wins <- c(72, 73)
 # 程式碼 6-4
 losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE)
@@ -9,3 +10,4 @@ great_nba_teams[, 1] <- as.character(great_nba_teams[, 1])
 great_nba_teams[, 5] <- as.character(great_nba_teams[, 5])
 great_nba_teams[, 1] # 選出第一個變數
 great_nba_teams[, 5] # 選出第五個變數
+
