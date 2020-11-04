@@ -33,10 +33,17 @@ c<- ubike %>%
   group_by(sarea) %>% 
   summarise(across(tot,sum) %>% 
   arrange(desc(tot)))
-
+#View(ubike)
 boxplot(c$tot)
 
+#[How to sum a variable by group]
 
+DF <-  data.frame(Categ1=factor(c('A','A','B','B','A','B','A')),
+                  Categ2=factor(c('X','Y','X','X','X','Y','Y')),
+                  Samples=c(1,2,4,3,5,6,7),
+                  Freq=c(10,30,45,55,80,65,50))
+
+DF %>% group_by(Categ1,Categ2) %>% summarise(across(Freq, sum))
 
 
 #install.packages('data.table')
