@@ -18,8 +18,23 @@ sort(x,decreasing = T)
 
 a<-sort(x,decreasing = T)
 b<-as.data.frame(a)
-View(b)
+
+names(b)<-c('Area','Count')
 write.csv(b,file = "NTP.csv",fileEncoding = "UTF-8",row.names = F)
+View(b)
+sum(b$Count)
+summary(b)
+boxplot(b$Count)
+quantile(b$Count)
+
+library(dplyr)
+ubike$tot<-as.numeric(ubike$tot)
+c<- ubike %>% 
+  group_by(sarea) %>% 
+  summarise(across(tot,sum) %>% 
+  arrange(desc(tot)))
+
+boxplot(c$tot)
 
 
 
