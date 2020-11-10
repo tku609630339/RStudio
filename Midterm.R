@@ -21,9 +21,13 @@ value<-c(product$output_value)
 i<-data.frame(name=name,output=output,price=price,value=value)
 i1<-data.frame(name=name,output=output)
 i2<-data.frame(name=name,value=value)
+i
+i1
+i2
 
 ii<-as.data.frame(i)
 ii1<-as.data.frame(i1)
+
 #產值排序
 library(dplyr)
 c<- ii1 %>% 
@@ -32,7 +36,8 @@ c<- ii1 %>%
 c
 #c1<- ii1 %>% 
 #  select()
-#windows()
+#資料視覺化ggplot2
+windows()
 library(ggplot2)
 
 pro <- table(i1$name)
