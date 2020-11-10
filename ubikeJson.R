@@ -10,6 +10,7 @@ download.file("https://quality.data.gov.tw/dq_download_json.php?nid=123026&md5_u
 ubike <- fromJSON("ubikeNTP.json")
 table(ubike$sarea)
 x<-table(ubike$sarea)
+View(x)
 sort(x)
 sort(x,decreasing = T)
 #UbikeData <- lapply(jdata$retVal, unlist)
@@ -26,7 +27,7 @@ sum(b$Count)
 summary(b)
 boxplot(b$Count)
 quantile(b$Count)
-
+#View(ubike)
 library(dplyr)
 ubike$tot<-as.numeric(ubike$tot)
 c<- ubike %>% 
