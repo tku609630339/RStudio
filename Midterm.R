@@ -19,6 +19,11 @@ output<-c(product$output)
 price<-c(product$price)
 value<-c(product$output_value)
 i<-data.frame(name=name,output=output,price=price,value=value)
+
+
+
+
+
 i1<-data.frame(name=name,output=output)
 i2<-data.frame(name=name,value=value)
 i
@@ -29,6 +34,8 @@ ii<-as.data.frame(i)
 ii1<-as.data.frame(i1)
 
 #產值排序
+order(i$value,decreasing = F)[1:5]
+
 library(dplyr)
 c<- ii1 %>% 
   arrange(desc(value))
