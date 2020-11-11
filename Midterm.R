@@ -55,7 +55,7 @@ barplot(pro, main="臺灣地區農產品生產量",
 pro1 <- table(i2$name)
 barplot(pro1, main="臺灣地區農產品產值", 
         xlab="name", ylab="output", border='red',
-        col='green', ylim=c(0, 5))
+        col='green', ylim=c(0, 20))
 
 #輸出csv檔(轉換具BOM的UTF-8)
 b<-as.data.frame(ii)
