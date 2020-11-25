@@ -9,3 +9,4 @@ text1
 gsub(pattern = "\\w",replacement = " ",text1)
 strsplit(text1,' ')
 strsplit(a,' ')
+

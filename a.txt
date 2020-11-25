@@ -1,5 +1,1 @@
-R version 4.0.2 (2020-06-22) -- "Taking Off Again"
-Copyright (C) 2020 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
-
 I was wondering:do you the corresponding PDF or DOC Tutorial that uploaded after you uploaded the video?I wanna take notes to go through it later  but sometimes cannot work out.And it's really useful,thanks a lot.
