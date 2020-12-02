@@ -1,0 +1,2 @@
+When using this dataset please use the following citation and pay attention to the rights documented in rights.txt:
+Ko J C (2020). The Taiwan Breeding Bird Survey Data. Version 1.8. Taiwan Endemic Species Research Institute. Sampling event dataset https://doi.org/10.15468/qqkhd5 accessed via GBIF.org on 2020-12-02.
