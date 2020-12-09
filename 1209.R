@@ -56,3 +56,8 @@ DF <- tibble(V1 = rep(c(1L, 2L), 5)[-10],
 class(DF)
 DF
 #12/09==hw:Filter unique rows
+unique(DT)
+unique(DT, by = c("V1", "V4")) # returns all cols
+distinct(DF) # distinct_all(DF)
+distinct(DF, across(c(V1, V4))) # returns selected cols
+# distinct_at(DF, vars(V1, V4))
